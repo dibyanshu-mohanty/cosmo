@@ -6,11 +6,33 @@ A new Flutter project.
 
 This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## How to run Locally
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. Clone the repository into your system
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+git clone "https://github.com/dibyanshu-mohanty/cosmo.git"
+```
+
+2. Setup your Cosmocloud account and connect it to the Mongo Cluster (Refer Documentation)
+
+3. Replace the credentials in the `.env` file as per this
+
+```
+PROJECT_ID = "${PROJECT_ID}",
+ENVIRONMENT_ID = "${ENV_ID}",
+```
+
+4. Install the dependencies
+
+```
+pub get
+```
+
+5. Replace the `baseUrl` with your Base Url from Cosmocloud in the `services/network_service.dart` file.
+
+6. Run the application on Virtual or Physical Device
+
+```
+flutter run lib/main.dart
+```
